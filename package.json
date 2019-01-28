@@ -2,6 +2,13 @@
   "name": "@uxui/copy-to-clipboard-react",
   "version": "0.0.1",
   "description": "React component helps ease the work of copying to clipboard using render prop.",
+  "keywords": [
+    "react",
+    "copy toclipboard",
+    "clipboard",
+    "render prop",
+    "render props"
+  ],
   "author": "Zlatan Pham <zlatan.pham@gmail.com> (https://github.com/zlatanpham)",
   "license": "MIT",
   "repository": "zlatanpham/copy-to-clipboard-react",
