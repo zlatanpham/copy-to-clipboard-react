@@ -50,6 +50,13 @@ class CopyToClipboard extends Component<
   };
 
   render() {
+    if (typeof this.props.children !== 'function') {
+      console.error(
+        'Children for <CopyToClipboard> must be a function which returns a JSX element!',
+      );
+      return null;
+    }
+
     return this.props.children(this.state);
   }
 }
