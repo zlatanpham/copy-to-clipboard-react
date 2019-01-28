@@ -1,6 +1,6 @@
 {
   "name": "@uxui/copy-to-clipboard-react",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "React component helps ease the work of copying to clipboard using render prop.",
   "keywords": [
     "react",
