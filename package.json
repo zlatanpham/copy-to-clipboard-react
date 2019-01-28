@@ -1,5 +1,5 @@
 {
-  "name": "@uiux/copy-to-clipboard-react",
+  "name": "@uxui/copy-to-clipboard-react",
   "version": "0.0.1",
   "description": "React component helps ease the work of copying to clipboard using render prop.",
   "author": "Zlatan Pham <zlatan.pham@gmail.com> (https://github.com/zlatanpham)",
