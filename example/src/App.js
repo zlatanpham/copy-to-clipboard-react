@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import CopyToClipboard from 'copy-to-clipboard-react';
 
 class App extends Component {

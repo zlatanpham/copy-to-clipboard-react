@@ -2,29 +2,34 @@
 
 > React component help ease the work of copying to clipboard using render prop
 
-[![NPM](https://img.shields.io/npm/v/copy-to-clipboard-react.svg)](https://www.npmjs.com/package/copy-to-clipboard-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save copy-to-clipboard-react
+npm install --save @uxui/copy-to-clipboard-react
 ```
 
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import * as React from 'react';
+import CopyToClipboard from 'copy-to-clipboard-react';
 
-import MyComponent from 'copy-to-clipboard-react'
-
-class Example extends React.Component {
-  render () {
+class CopyToClipboard extends React.Component {
+  render() {
     return (
-      <MyComponent />
-    )
+      <CopyToClipboard>
+        {({ copied, copy, turnOffCopied }) => (
+          // JSX goes here
+        )}
+      </CopyToClipboard>
+    );
   }
 }
 ```
+
+## Props
 
 ## License
 
