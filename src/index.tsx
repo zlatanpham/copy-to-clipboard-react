@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, useState } from 'react';
 
 const copyToClipboard = (content: string) => {
   const textArea = document.createElement('textarea');
@@ -62,3 +62,21 @@ class CopyToClipboard extends Component<
 }
 
 export default CopyToClipboard;
+
+export function useCopyToClipboard(
+  copiedCallback?: (content?: string) => void,
+) {
+  const [copied, setCopied] = useState(false);
+
+  return {
+    copy: (content: string) => {
+      setCopied(true);
+      copyToClipboard(content);
+      typeof copiedCallback === 'function' && copiedCallback(content);
+    },
+    copied,
+    turnOffCopied: () => {
+      setCopied(false);
+    },
+  };
+}

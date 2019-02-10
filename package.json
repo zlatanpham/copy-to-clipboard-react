@@ -7,7 +7,8 @@
     "copy to clipboard",
     "clipboard",
     "render prop",
-    "render props"
+    "render props",
+    "hook"
   ],
   "author": "Zlatan Pham <zlatan.pham@gmail.com> (https://github.com/zlatanpham)",
   "license": "MIT",
