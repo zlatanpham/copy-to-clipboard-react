@@ -10,11 +10,11 @@
 npm install --save @uxui/copy-to-clipboard-react
 ```
 
-## Usage
+## Render Prop Usage
 
 It uses `render prop`, you render whatever you want to based on the state of `CopyToClipboard`.
 
-```tsx
+```jsx
 import * as React from 'react';
 import CopyToClipboard from 'copy-to-clipboard-react';
 
@@ -33,15 +33,35 @@ class CopyToClipboard extends React.Component {
 
 Live demo can be found [here](https://codesandbox.io/s/lrpwj3rj29).
 
-## Children Function
+### Children Function
 
 - `copy: (content: string) => void`: copy any thing passed to param `content` to clipboard.
 - `copied: boolean`: a state will get truthy after `copy()` gets called.
 - `turnOffCopied: () => void`: simply set `copied` to `false`.
 
-## Props
+### Props
 
 - `callback: (content?: string) => void`: callback after `copy()` get called.
+
+## Hook Usage
+
+Hook is supported as React 16.8.x came out.
+
+```jsx
+import React from 'react';
+import './App.css';
+
+import { useCopyToClipboard } from '@uxui/copy-to-clipboard-react';
+
+const YourFunctionalComponent = () => {
+  const { copied, copy, turnOffCopied } = useCopyToClipboard();
+
+  return (
+    // JSX goes here
+  );
+};
+
+```
 
 ## License
 
